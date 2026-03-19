@@ -1,2 +1,2 @@
-* (/reverse-engeneering)[Reverse Engeneering]
-* (/binary-exploitation)[Binary Exploitation]
+* (reverse-engeneering)[Reverse Engeneering]
+* (binary-exploitation)[Binary Exploitation]
