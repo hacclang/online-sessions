@@ -69,18 +69,18 @@ void tcp_scan(char *ip,int proc)
 			pids[i] = pid;
 			start += offset;
 		}
+		
+		for(int i = 0; i< proc; i++)
+		{
+			waitpid(pids[i],NULL,0);
+		}
 	}
 
-	
-	for(int i = 0; i< proc; i++)
-	{
-		waitpid(pids[i],NULL,0);
-	}
 }
 
 
 int main(int argc,char **argv)
 {
-	tcp_scan(argv[1],30);
+	tcp_scan(argv[1],40);
 	return 0;
 }
